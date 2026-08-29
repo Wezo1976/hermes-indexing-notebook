@@ -1,0 +1,29 @@
+{
+  "tags": {
+    "contributing": {
+      "description": "General contribution guidelines",
+      "sections": ["intro", "issue-tracker", "pull-requests"],
+      "count": 3
+    },
+    "git": {
+      "description": "Git-related topics",
+      "sections": ["commit-signatures", "link-validation"],
+      "count": 2
+    },
+    "guidelines": {
+      "description": "Best practices and rules",
+      "sections": ["issue-tracker", "pull-requests"],
+      "count": 2
+    },
+    "testing": {
+      "description": "Testing and validation",
+      "sections": ["link-validation"],
+      "count": 1
+    },
+    "community": {
+      "description": "Community and collaboration",
+      "sections": ["intro"],
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "notebook": "the-book-of-secret-knowledge-contributing",
+  "version": "1.0",
+  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md",
+  "created": "2026-08-29",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Introduction",
+      "path": "sections/01-intro.md",
+      "tags": ["contributing", "overview", "community"]
+    },
+    {
+      "id": "issue-tracker",
+      "title": "Using the Issue Tracker",
+      "path": "sections/02-issue-tracker.md",
+      "tags": ["issue-tracking", "bug-reports", "feature-requests", "guidelines"]
+    },
+    {
+      "id": "commit-signatures",
+      "title": "Commit Signatures",
+      "path": "sections/03-commit-signatures.md",
+      "tags": ["git", "commits", "signing", "security"]
+    },
+    {
+      "id": "pull-requests",
+      "title": "Pull Requests",
+      "path": "sections/04-pull-requests.md",
+      "tags": ["pull-requests", "code-review", "best-practices"]
+    },
+    {
+      "id": "link-validation",
+      "title": "Finding Broken Links",
+      "path": "sections/05-link-validation.md",
+      "tags": ["links", "testing", "bash", "curl"]
+    }
+  ],
+  "metadata": {
+    "document_type": "contributing-guide",
+    "project": "the-book-of-secret-knowledge",
+    "author": "trimstray",
+    "keywords": ["contributing", "open-source", "github", "community", "guidelines"],
+    "searchable": true
+  }
+}

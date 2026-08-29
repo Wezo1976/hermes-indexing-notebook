@@ -1,0 +1,34 @@
+{
+  "search_terms": [
+    {
+      "term": "how to contribute",
+      "sections": ["intro", "issue-tracker", "pull-requests"],
+      "keywords": ["contribute", "fork", "submit"]
+    },
+    {
+      "term": "bug report",
+      "sections": ["issue-tracker"],
+      "keywords": ["bug", "issue", "error"]
+    },
+    {
+      "term": "feature request",
+      "sections": ["issue-tracker"],
+      "keywords": ["feature", "enhancement", "improvement"]
+    },
+    {
+      "term": "commit signing",
+      "sections": ["commit-signatures"],
+      "keywords": ["sign", "signature", "signed-off-by"]
+    },
+    {
+      "term": "pull request process",
+      "sections": ["pull-requests"],
+      "keywords": ["pr", "code review", "merge"]
+    },
+    {
+      "term": "broken links",
+      "sections": ["link-validation"],
+      "keywords": ["link", "url", "broken", "404"]
+    }
+  ]
+}

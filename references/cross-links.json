@@ -1,0 +1,34 @@
+{
+  "relationships": [
+    {
+      "from": "intro",
+      "to": "issue-tracker",
+      "type": "prerequisite",
+      "description": "Understanding contribution workflow before using issue tracker"
+    },
+    {
+      "from": "issue-tracker",
+      "to": "pull-requests",
+      "type": "related",
+      "description": "Issue tracking and PR workflow are connected"
+    },
+    {
+      "from": "pull-requests",
+      "to": "commit-signatures",
+      "type": "required",
+      "description": "All PRs must include properly signed commits"
+    },
+    {
+      "from": "link-validation",
+      "to": "issue-tracker",
+      "type": "workflow",
+      "description": "Report broken links via issue tracker"
+    },
+    {
+      "from": "link-validation",
+      "to": "pull-requests",
+      "type": "workflow",
+      "description": "Fix broken links via pull requests"
+    }
+  ]
+}
