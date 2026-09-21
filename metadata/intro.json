@@ -1,0 +1,13 @@
+{
+  "id": "01-intro.md",
+  "section_id": "intro",
+  "title": "Introduction",
+  "path": "sections/01-intro.md",
+  "word_count": 185,
+  "tags": [
+    "contributing",
+    "overview",
+    "community"
+  ],
+  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md"
+}

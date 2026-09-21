@@ -1,0 +1,13 @@
+{
+  "id": "04-pull-requests.md",
+  "section_id": "pull-requests",
+  "title": "Pull Requests",
+  "path": "sections/04-pull-requests.md",
+  "word_count": 160,
+  "tags": [
+    "pull-requests",
+    "code-review",
+    "best-practices"
+  ],
+  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md"
+}

@@ -1,38 +1,32 @@
 # Commit Signatures
 
+This section captures the repository rule that every commit must include a sign-off line.
+
 ## Requirement
 
-Moving forward, all commits to this project must include a **"signed-off-by"** line indicating:
-- The name of the contributor
-- The email address of the contributor
+All commits must include a `signed-off-by` line with the contributor's name and email address. This acts as a contributor sign-off attached to each change.
 
-## Setup Instructions
+## Git hook setup
 
-### Enable Git Commit Signatures
-
-Add the following lines to `.git/hooks/prepare-commit-msg`:
+To add the sign-off automatically, place the following snippet in `.git/hooks/prepare-commit-msg`:
 
 ```bash
 SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/- signed-off-by: \1/p')
 grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
 ```
 
-### What This Does
+## How the hook works
 
-- Automatically extracts your Git author identity
-- Appends a "signed-off-by" line to every commit message
-- Prevents duplicate signatures
+The script:
 
-## Example Commit Message
+1. reads the current Git author identity,
+2. formats it as a `signed-off-by` line, and
+3. appends it only if that line is not already present in the commit message.
 
-```
-Fix broken link in README
+## Result
 
-- signed-off-by: John Doe <john@example.com>
-```
+With the hook enabled, contributors can keep commit messages compliant without adding the sign-off manually every time.
 
 ---
 
-**Tags:** #git #commits #signing #security #contributor-agreement
-
-**Related:** [Pull Requests](04-pull-requests.md)
+_Source adapted from [`CONTRIBUTING.md`](https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md)._

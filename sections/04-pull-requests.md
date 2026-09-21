@@ -1,35 +1,32 @@
 # Pull Requests
 
-## Guidelines
+This section summarizes the expectations for opening a pull request against the project.
 
-When creating a pull request, please follow these requirements:
+## Before opening a pull request
 
-### 1. Base Branch
-- Base your code on the **latest master branch**
-- Avoids manual merges
+Base your work on the latest `master` branch. Doing so reduces the chance of manual merge work later.
 
-### 2. Code Review
-- Code review may ensue to help shape your proposal
-- Be open to feedback and discussion
+## During review
 
-### 3. Description
-- Explain the **problem** you're solving
-- Explain your **proposed solution**
+The guide notes that code review may follow every submission. Review is part of refining the proposal, so contributors should expect discussion and be ready to adjust their changes.
 
-### 4. Commit Message
-- Use a **one-line description**
-- Don't continue the description on new lines
-- Include proper commit signatures (see [Commit Signatures](03-commit-signatures.md))
+## What to include
 
-## Best Practices
+A pull request should clearly explain:
 
-✓ Keep PRs focused and atomic
-✓ Test your changes before submitting
-✓ Update documentation if needed
-✓ Respond to review comments promptly
+- the problem being addressed, and
+- the proposed solution.
+
+That context helps reviewers understand both the need for the change and the intended outcome.
+
+## Description style
+
+The original guidance also asks for a one-line description and says not to continue that description across multiple lines.
+
+## Practical takeaway
+
+Prepare the branch from current upstream code, keep the explanation concise, and make the purpose of the change obvious to reviewers.
 
 ---
 
-**Tags:** #pull-requests #code-review #best-practices #collaboration
-
-**Related:** [Commit Signatures](03-commit-signatures.md) | [Issue Tracker](02-issue-tracker.md)
+_Source adapted from [`CONTRIBUTING.md`](https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md)._
