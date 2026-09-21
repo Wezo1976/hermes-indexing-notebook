@@ -21,7 +21,7 @@ That context helps reviewers understand both the need for the change and the int
 
 ## Description style
 
-The original guidance also asks for a one-line description and says not to continue that description across multiple lines.
+The original guidance also asks for a one-line commit description and says not to continue that description across multiple lines.
 
 ## Practical takeaway
 

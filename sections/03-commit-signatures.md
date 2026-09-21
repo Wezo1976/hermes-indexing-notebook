@@ -27,8 +27,6 @@ The script:
 
 With the hook enabled, contributors can keep commit messages compliant without adding the sign-off manually every time.
 
-_Author note: this section preserves the exact sign-off wording shown in the cited source guide._
-
 ---
 
 _Source adapted from [`CONTRIBUTING.md`](https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md)._
