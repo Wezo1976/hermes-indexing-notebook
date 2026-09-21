@@ -36,7 +36,8 @@ done
 ## Interpreting the results
 
 - `2xx` responses are treated as healthy links.
-- `3xx` responses indicate redirects that may deserve cleanup.
+- Any non-`2xx` response is reported by this workflow.
+- `3xx` responses are still flagged, which makes them a useful follow-up category for redirect cleanup.
 - `4xx` and `5xx` responses are strong candidates for repair or replacement.
 
 ## When to use it

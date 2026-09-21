@@ -4,11 +4,11 @@ This section captures the repository rule that every commit must include a sign-
 
 ## Requirement
 
-All commits must include a sign-off trailer with the contributor's name and email address. The upstream guide spells this as `signed-off-by`, but standard Git/DCO tooling usually expects the canonical `Signed-off-by: Name <email>` form in the final commit message.
+All commits must include a sign-off trailer with the contributor's name and email address. The upstream guide spells this as `signed-off-by`; this notebook intentionally normalizes the example below to the canonical `Signed-off-by: Name <email>` form so the generated trailer matches common Git/DCO tooling.
 
 ## Git hook setup
 
-To add the sign-off automatically, place the following snippet in `.git/hooks/prepare-commit-msg` and make the hook executable with `chmod +x .git/hooks/prepare-commit-msg`. This adapts the source example to emit a standard trailer format:
+To add the sign-off automatically, place the following snippet in `.git/hooks/prepare-commit-msg` and make the hook executable with `chmod +x .git/hooks/prepare-commit-msg`. This is an intentional notebook adaptation of the source example so the hook emits a standard trailer format:
 
 ```bash
 SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
