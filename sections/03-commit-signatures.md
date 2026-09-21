@@ -4,14 +4,14 @@ This section captures the repository rule that every commit must include a sign-
 
 ## Requirement
 
-All commits must include a `signed-off-by` line with the contributor's name and email address. This acts as a contributor sign-off attached to each change.
+All commits must include a sign-off trailer with the contributor's name and email address. The upstream guide spells this as `signed-off-by`, but standard Git/DCO tooling usually expects the canonical `Signed-off-by: Name <email>` form in the final commit message.
 
 ## Git hook setup
 
-To add the sign-off automatically, place the following snippet in `.git/hooks/prepare-commit-msg` and make the hook executable with `chmod +x .git/hooks/prepare-commit-msg`:
+To add the sign-off automatically, place the following snippet in `.git/hooks/prepare-commit-msg` and make the hook executable with `chmod +x .git/hooks/prepare-commit-msg`. This adapts the source example to emit a standard trailer format:
 
 ```bash
-SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/- signed-off-by: \1/p')
+SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
 grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
 ```
 
@@ -20,7 +20,7 @@ grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
 The script:
 
 1. reads the current Git author identity,
-2. formats it as a `signed-off-by` line, and
+2. formats it as a `Signed-off-by:` trailer, and
 3. appends it only if that line is not already present in the commit message.
 
 ## Result
