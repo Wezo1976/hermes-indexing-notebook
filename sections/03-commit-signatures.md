@@ -4,7 +4,7 @@ This section captures the repository rule that every commit must include a sign-
 
 ## Requirement
 
-All commits must include a `Signed-off-by:` line with the contributor's name and email address. This acts as a contributor sign-off attached to each change.
+All commits must include a `Signed-off-by:` line with the contributor's name and email address. This acts as a contributor sign-off attached to each change. The source guide shows the trailer in lowercase, but this notebook normalizes it to Git's conventional `Signed-off-by:` casing.
 
 ## Git hook setup
 
