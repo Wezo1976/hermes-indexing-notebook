@@ -1,10 +1,8 @@
 # Finding Broken Links
 
-## Overview
+This section shows the shell workflow suggested by the project for spotting broken external links.
 
-The README.md contains many external links. This guide shows how to find and report broken links.
-
-## Validation Script
+## Example command sequence
 
 ```bash
 git clone https://github.com/trimstray/the-book-of-secret-knowledge && cd the-book-of-secret-knowledge
@@ -18,40 +16,34 @@ for i in $(sed -n 's/.*href="\([^"]*\).*/\1/p' README.md | grep -v "^#") ; do
 done
 ```
 
-## How It Works
+## What the script does
 
-1. **Clone** the repository
-2. **Extract** all href links from README.md
-3. **Filter** out internal anchors (starting with #)
-4. **Check** HTTP status code for each link
-5. **Report** any non-2xx responses
+1. Clones the repository locally.
+2. Extracts `href` values from `README.md`.
+3. Uses `grep -v "^#"` to skip internal anchor links that begin with `#`.
+4. Uses `curl` to request each URL and capture the HTTP status code.
+5. Prints a line whenever the status code does not begin with `2`.
 
-## Example Output
+## Example output
 
 ```bash
  -> https://ghostproject.fr/ - 503
  -> http://www.mmnt.net/ - 302
  -> https://search.weleakinfo.com/ - 503
- [...]  
+ [...]
 ```
 
-## HTTP Status Codes
+## Interpreting the results
 
-| Code | Meaning |
-|------|----------|
-| 2xx  | Success |
-| 3xx  | Redirect |
-| 4xx  | Client Error (not found) |
-| 5xx  | Server Error |
+- `2xx` responses are treated as healthy links.
+- Any non-`2xx` response is reported by this workflow.
+- `3xx` responses are still flagged, which makes them a useful follow-up category for redirect cleanup.
+- `4xx` and `5xx` responses are strong candidates for repair or replacement.
 
-## What to Do with Results
+## When to use it
 
-- **2xx codes** → Valid, no action needed
-- **3xx codes** → Redirect, may need updating to final URL
-- **4xx/5xx codes** → Broken, should be reported or fixed
+Run this workflow when checking documentation quality or before reporting broken links through the normal contribution channels.
 
 ---
 
-**Tags:** #link-validation #bash #curl #testing #automation #maintenance
-
-**Related:** [Issue Tracker](02-issue-tracker.md) | [Pull Requests](04-pull-requests.md)
+_Source adapted from [`CONTRIBUTING.md`](https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md)._

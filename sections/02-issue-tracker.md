@@ -1,27 +1,37 @@
 # Using the Issue Tracker
 
-## Overview
+This section explains when the issue tracker should be used and which behaviors to avoid.
 
-The [issue tracker](https://github.com/trimstray/the-book-of-secret-knowledge/issues) is the preferred channel for:
-- Bug reports
-- Feature requests
-- Submitting pull requests
+## Preferred uses
 
-## Guidelines
+The source guide treats the issue tracker as the preferred channel for contribution-related activity, especially:
 
-### DO:
-- Use the issue tracker for bugs, features, and PRs
-- Keep discussions on topic
-- Respect the opinions of others
+- bug reports,
+- feature requests, and
+- pull-request-related project workflow.
 
-### DO NOT:
-- Use the issue tracker for personal support requests
-  - **Instead:** Use [Stack Overflow](https://stackoverflow.com) or IRC
-- Derail or troll issues
-- Post off-topic comments
+Using one visible channel for project discussion keeps reporting and follow-up easier to manage.
+
+## Restrictions
+
+Please do **not** use the issue tracker for personal support requests. For one-off help, the guide points contributors to:
+
+- [Stack Overflow](https://stackoverflow.com)
+- IRC
+
+## Discussion etiquette
+
+When participating in issues:
+
+- stay on topic,
+- avoid derailing the discussion,
+- do not troll other participants, and
+- respect other contributors' opinions.
+
+## Practical takeaway
+
+Open an issue when it helps the project move forward, but choose a different support channel when the request is only about personal troubleshooting.
 
 ---
 
-**Tags:** #issue-tracking #bug-reports #feature-requests #etiquette #guidelines
-
-**Related:** [Pull Requests](04-pull-requests.md) | [Commit Signatures](03-commit-signatures.md)
+_Source adapted from [`CONTRIBUTING.md`](https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md)._

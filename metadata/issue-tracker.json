@@ -1,0 +1,15 @@
+{
+  "id": "02-issue-tracker.md",
+  "section_id": "issue-tracker",
+  "title": "Using the Issue Tracker",
+  "path": "sections/02-issue-tracker.md",
+  "word_count": 149,
+  "tags": [
+    "issue-tracking",
+    "bug-reports",
+    "feature-requests",
+    "guidelines"
+  ],
+  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md",
+  "word_count_method": "wc -w on Markdown source"
+}
