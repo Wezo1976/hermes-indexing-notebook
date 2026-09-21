@@ -21,7 +21,7 @@ That context helps reviewers understand both the need for the change and the int
 
 ## Description style
 
-The original guidance also asks for a one-line summary and says not to continue that summary across multiple lines. In practice, treat that as guidance for the short change description or subject line, not as a ban on clearly explaining the problem and solution in the pull request body.
+The original guidance also asks for a one-line description and says not to continue that description across multiple lines.
 
 ## Practical takeaway
 
