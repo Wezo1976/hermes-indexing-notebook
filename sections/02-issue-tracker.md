@@ -8,7 +8,7 @@ The issue tracker is the preferred place for:
 
 - bug reports,
 - feature requests, and
-- discussions tied to submitted pull requests.
+- submitting pull requests.
 
 Using one shared channel keeps project discussion visible and easier to manage.
 

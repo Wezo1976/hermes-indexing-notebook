@@ -20,9 +20,9 @@ done
 
 1. Clones the repository locally.
 2. Extracts `href` values from `README.md`.
-3. Skips internal anchor links that begin with `#`.
+3. Uses `grep -v "^#"` to skip internal anchor links that begin with `#`.
 4. Uses `curl` to request each URL and capture the HTTP status code.
-5. Prints any link whose response is not in the `2xx` success range.
+5. Prints a line whenever the status code does not begin with `2`.
 
 ## Example output
 
