@@ -3,12 +3,13 @@
   "section_id": "commit-signatures",
   "title": "Commit Signatures",
   "path": "sections/03-commit-signatures.md",
-  "word_count": 126,
+  "word_count": 152,
   "tags": [
     "git",
     "commits",
     "signing",
     "security"
   ],
-  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md"
+  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md",
+  "word_count_method": "wc -w on Markdown source"
 }

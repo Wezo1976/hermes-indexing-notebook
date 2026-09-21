@@ -3,11 +3,12 @@
   "section_id": "pull-requests",
   "title": "Pull Requests",
   "path": "sections/04-pull-requests.md",
-  "word_count": 129,
+  "word_count": 159,
   "tags": [
     "pull-requests",
     "code-review",
     "best-practices"
   ],
-  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md"
+  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md",
+  "word_count_method": "wc -w on Markdown source"
 }

@@ -3,12 +3,13 @@
   "section_id": "link-validation",
   "title": "Finding Broken Links",
   "path": "sections/05-link-validation.md",
-  "word_count": 119,
+  "word_count": 218,
   "tags": [
     "links",
     "testing",
     "bash",
     "curl"
   ],
-  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md"
+  "source": "https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/.github/CONTRIBUTING.md",
+  "word_count_method": "wc -w on Markdown source"
 }

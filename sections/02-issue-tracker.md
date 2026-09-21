@@ -4,13 +4,13 @@ This section explains when the issue tracker should be used and which behaviors 
 
 ## Preferred uses
 
-The issue tracker is the preferred place for:
+The source guide treats the issue tracker as the preferred channel for contribution-related activity, especially:
 
 - bug reports,
 - feature requests, and
-- submitting pull requests.
+- pull-request-related project workflow.
 
-Using one shared channel keeps project discussion visible and easier to manage.
+Using one visible channel for project discussion keeps reporting and follow-up easier to manage.
 
 ## Restrictions
 
